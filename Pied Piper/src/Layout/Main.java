@@ -68,7 +68,6 @@ public class Main extends javax.swing.JFrame {
         jPopupMenu2.add(jMenuItem8);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.setText("Search");
