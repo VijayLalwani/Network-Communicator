@@ -24,6 +24,11 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
         bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
+        jPopupMenu2 = new javax.swing.JPopupMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
         jTextField1 = new javax.swing.JTextField();
         jScrollPane3 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
@@ -42,8 +47,28 @@ public class Main extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
 
+        jMenuItem5.setFont(new java.awt.Font("Verdana", 0, 15)); // NOI18N
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-location-logo.png"))); // NOI18N
+        jMenuItem5.setText("Location");
+        jPopupMenu2.add(jMenuItem5);
+
+        jMenuItem6.setFont(new java.awt.Font("Verdana", 0, 15)); // NOI18N
+        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-send-file-24.png"))); // NOI18N
+        jMenuItem6.setText("Files");
+        jPopupMenu2.add(jMenuItem6);
+
+        jMenuItem7.setFont(new java.awt.Font("Verdana", 0, 15)); // NOI18N
+        jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-speaker-24.png"))); // NOI18N
+        jMenuItem7.setText("Audio");
+        jPopupMenu2.add(jMenuItem7);
+
+        jMenuItem8.setFont(new java.awt.Font("Verdana", 0, 15)); // NOI18N
+        jMenuItem8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-happy-emoji-face.png"))); // NOI18N
+        jMenuItem8.setText("Emoji");
+        jPopupMenu2.add(jMenuItem8);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.setText("Search");
@@ -114,7 +139,7 @@ public class Main extends javax.swing.JFrame {
 
         jPanel3.setBorder(new javax.swing.border.MatteBorder(null));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-happy-32.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-share.png"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -150,10 +175,11 @@ public class Main extends javax.swing.JFrame {
         bindingGroup.bind();
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        jPopupMenu2.show(this, 255, 540);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -189,9 +215,14 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JList<String> jList1;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPopupMenu jPopupMenu2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea1;
